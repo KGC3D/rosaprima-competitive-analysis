@@ -303,7 +303,7 @@ function CompetitorCard({
 
         <div className="grid gap-4 md:grid-cols-2">
           <div>
-            <p className="mb-2 font-medium text-chart-1">Strengths</p>
+            <p className="mb-2 font-medium text-primary">Strengths</p>
             <ul className="list-inside list-disc space-y-1 text-muted-foreground">
               {competitor.strengths.map((s) => (
                 <li key={s}>{s}</li>
@@ -334,22 +334,25 @@ function CompetitorCard({
 
 export default function Page() {
   return (
-    <div className="mx-auto min-h-svh max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-      {/* Header */}
-      <header className="mb-10">
-        <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+    <div className="min-h-svh">
+      {/* Hero Header */}
+      <header className="bg-primary px-4 py-16 text-center text-primary-foreground sm:px-6 lg:px-8">
+        <p className="mb-4 text-[0.65rem] uppercase tracking-[0.35em] text-primary-foreground/70">
           Market Intelligence Report
         </p>
-        <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="font-heading text-3xl font-light italic tracking-wide sm:text-4xl lg:text-5xl">
           Rosaprima Competitive Analysis
         </h1>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <div className="mx-auto mt-4 h-px w-24 bg-accent" />
+        <p className="mt-4 text-[0.7rem] uppercase tracking-[0.25em] text-primary-foreground/60">
           South America Premium Rose Market &middot; March 2026
         </p>
       </header>
 
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+
       {/* Benchmark Card */}
-      <Card className="mb-8 border-primary/20 bg-primary/[0.03]">
+      <Card className="mb-8 border-accent/30 bg-accent/[0.05]">
         <CardHeader>
           <div className="flex items-center gap-3">
             <CardTitle className="text-lg">Rosaprima — Benchmark</CardTitle>
@@ -577,7 +580,7 @@ export default function Page() {
                     </div>
                     <div className="relative h-3 w-full overflow-hidden bg-muted">
                       <div
-                        className="absolute top-0 h-full bg-chart-2"
+                        className="absolute top-0 h-full bg-accent"
                         style={{
                           left: `${(item.low / 6) * 100}%`,
                           width: `${((item.high - item.low) / 6) * 100}%`,
@@ -609,7 +612,7 @@ export default function Page() {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  <TableRow className="bg-primary/[0.03]">
+                  <TableRow className="bg-accent/[0.08]">
                     <TableCell className="font-bold">Rosaprima</TableCell>
                     <TableCell className="font-medium">
                       $2.50–$5.00+
@@ -778,13 +781,16 @@ export default function Page() {
         </TabsContent>
       </Tabs>
 
+      </div>
+
       {/* Footer */}
-      <footer className="mt-16 border-t pt-6 text-center text-xs text-muted-foreground">
-        <p>
+      <footer className="bg-primary px-4 py-10 text-center text-primary-foreground">
+        <div className="mx-auto h-px w-16 bg-accent" />
+        <p className="mt-4 text-[0.65rem] uppercase tracking-[0.25em] text-primary-foreground/70">
           Rosaprima Competitive Analysis &middot; South America Premium Rose
           Market &middot; March 2026
         </p>
-        <p className="mt-1">
+        <p className="mt-2 text-[0.6rem] text-primary-foreground/50">
           Sources: Rosaprima, Naranjo Roses, Alexandra Farms, Royal Flowers
           Group, Rio Roses, Native Blooms, Thursd, Florists&apos; Review,
           Florabundance, Potomac Floral Wholesale
