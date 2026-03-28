@@ -336,15 +336,15 @@ export default function Page() {
   return (
     <div className="min-h-svh">
       {/* Hero Header */}
-      <header className="bg-primary px-4 py-16 text-center text-primary-foreground sm:px-6 lg:px-8">
-        <p className="mb-4 text-[0.65rem] uppercase tracking-[0.35em] text-primary-foreground/70">
+      <header className="bg-[oklch(0.30_0.04_350)] px-4 py-16 text-center text-white sm:px-6 lg:px-8">
+        <p className="mb-4 text-[0.65rem] uppercase tracking-[0.35em] text-white/60">
           Market Intelligence Report
         </p>
         <h1 className="font-heading text-3xl font-light italic tracking-wide sm:text-4xl lg:text-5xl">
           Rosaprima Competitive Analysis
         </h1>
-        <div className="mx-auto mt-4 h-px w-24 bg-accent" />
-        <p className="mt-4 text-[0.7rem] uppercase tracking-[0.25em] text-primary-foreground/60">
+        <div className="mx-auto mt-4 h-px w-24 bg-[oklch(0.72_0.12_10)]" />
+        <p className="mt-4 text-[0.7rem] uppercase tracking-[0.25em] text-white/50">
           South America Premium Rose Market &middot; March 2026
         </p>
       </header>
@@ -784,13 +784,13 @@ export default function Page() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-primary px-4 py-10 text-center text-primary-foreground">
-        <div className="mx-auto h-px w-16 bg-accent" />
-        <p className="mt-4 text-[0.65rem] uppercase tracking-[0.25em] text-primary-foreground/70">
+      <footer className="bg-[oklch(0.30_0.04_350)] px-4 py-10 text-center text-white">
+        <div className="mx-auto h-px w-16 bg-[oklch(0.72_0.12_10)]" />
+        <p className="mt-4 text-[0.65rem] uppercase tracking-[0.25em] text-white/60">
           Rosaprima Competitive Analysis &middot; South America Premium Rose
           Market &middot; March 2026
         </p>
-        <p className="mt-2 text-[0.6rem] text-primary-foreground/50">
+        <p className="mt-2 text-[0.6rem] text-white/40">
           Sources: Rosaprima, Naranjo Roses, Alexandra Farms, Royal Flowers
           Group, Rio Roses, Native Blooms, Thursd, Florists&apos; Review,
           Florabundance, Potomac Floral Wholesale
